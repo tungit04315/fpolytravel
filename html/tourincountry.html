@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>FPOLY TRAVEL - Thông Tin Địa Điểm Du Lịch Nổi Bật Ở Việt Nam</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="icon" type="image/x-icon" href="../icon/tourist_destination_information.png">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/tuorincountry.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <!-- menu -->
+    <div class="container-fluid bg-dark px-0">
+        <div class="row gx-0">
+            <div class="col-lg-3 bg-dark d-none d-lg-block">
+                <a href="https://tungit04315.github.io/fpolytravel/index.html" class="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center">
+                    <h1 class="m-0 text-primary text-uppercase">FPOLY TRAVEL</h1>
+                </a>
+            </div>
+            <div class="col-lg-9">
+                <div class="row gx-0 bg-white d-none d-lg-flex">
+                    <div class="col-lg-7 px-5 text-start">
+                        <div class="h-100 d-inline-flex align-items-center py-2 me-4">
+                            <i class="fa fa-envelope text-primary me-2"></i>
+                            <p class="mb-0">fpoly2010@gmail.com.vn</p>
+                        </div>
+                        <div class="h-100 d-inline-flex align-items-center py-2">
+                            <i class="fa fa-phone-alt text-primary me-2"></i>
+                            <p class="mb-0">0325 151 846</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 px-5 text-end">
+                        <div class="d-inline-flex align-items-center py-2">
+                            <a class="me-3" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="me-3" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="me-3" href=""><i class="fab fa-linkedin-in"></i></a>
+                            <a class="me-3" href=""><i class="fab fa-instagram"></i></a>
+                            <a class="" href=""><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <nav class="navbar navbar-expand-lg bg-dark navbar-dark p-3 p-lg-0">
+                    <a href="https://tungit04315.github.io/fpolytravel/index.html" class="navbar-brand d-block d-lg-none">
+                        <h1 class="m-0 text-primary text-uppercase">fpoly strave</h1>
+                    </a>
+                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                        <div class="navbar-nav mr-auto py-0">
+                            <a href="https://tungit04315.github.io/fpolytravel/index.html" class="nav-item nav-link active">Trang Chủ</a>
+                            <a href="../html/note.html" class="nav-item nav-link">Lưu ý - Cần Tránh</a>
+                            <a href="../html/repare.html" class="nav-item nav-link">Cần Chuẩn Bị</a>
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Địa Điểm</a>
+                                <div class="dropdown-menu rounded-0 m-0">
+                                    <a href="../html/tourincountry.html" class="dropdown-item">Miền Bắc</a>
+                                    <a href="../html/tourincountry.html" class="dropdown-item">Miền Nam</a>
+                                    <a href="../html/tourincountry.html" class="dropdown-item">Miền Trung</a>
+                                </div>
+                            </div>
+                            <a href="../html/Contact.html" class="nav-item nav-link">Liên Hệ</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- menu -->
+    <!-- banner -->
+    <div class="container-fluid p-0 mb-5">
+        <div class="backround">
+            <img src="../img/Chợ nổi cái răng.png" width="100%" alt="" height="500px">
+
+        </div>
+        <div class="search text-white">
+            <h2>TUOR TRONG NƯỚC</h2>
+            <p>Tour Trong Nước</p>
+        </div>
+        <section class="search-tour-section search-browser-web" id="sessionSearchWebTour">
+            <div class="container">
+                <div class="row">
+                    <!-- Search Form -->
+                    <form id="searchFormKiritmWebTour" method="get" role="form" action="/tim-kiem-tour">
+                        <div class="col-xs-12">
+                            <div class="row">
+                                <div class="col-sm-4 col-xs-12">
+                                    <div class="searchFilterQuery search-box-web-tour">
+                                        <input type="text" class="form-control" name="search" onkeyup="return showResultWebTour(event, this.value)" onkeypress="return checkSubmitSearchWebTour(event)" onkeydown="return onkeyDownSearchWebTour(event)" id="inputSearchWebTour" autocomplete="off"
+                                            placeholder="Tìm tour : ..." value="">
+
+                                        <div id="showSuggestionWebTour" class="suggestions hidden-cls">
+                                            <ul id="suggestionSearchWebTour" class="ul-suggestion">
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-xs-12">
+                                    <div class="row">
+                                        <div class="col-sm-4 col-xs-12">
+                                            <div id="fromDateSearchBoxWebTour" class="input-group date ed-datepicker filterDate">
+                                                <input type="date" class="form-control" name="from" placeholder="Từ ngày" autocomplete="off" value="">
+
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4 col-xs-12">
+                                            <div id="toDateSearchBoxWebTour" class="input-group date ed-datepicker filterDate">
+                                                <input type="date" class="form-control" name="to" autocomplete="off" placeholder="Đến ngày" value="">
+
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4 col-xs-12">
+                                            <div class="dropdown">
+                                                <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    Trong nước
+                                                </button>
+                                                <ul class="dropdown-menu dropdown-menu-ligth" aria-labelledby="dropdownMenuButton2">
+                                                    <li><a class="dropdown-item active" href="#">Ngoài nước</a></li>
+                                                    <li><a class="dropdown-item" href="#">Tất cả</a></li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-2 col-xs-12">
+                                    <button type="submit" class="btn btn-warning text-white buttonCustomPrimary">
+                                        Tìm kiếm
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <div class="container">
+
+            <div class="card mb-3 ml-3 mt-5" style="width: 100%;">
+                <div class="row col-lg-10">
+                    <div class="col-md-4">
+                        <img src="../img/MangDen.png" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8 ">
+                        <div class="card-body ">
+                            <h5 class="card-title">Măng Đen - Kon Tum </h5>
+                            <p class="card-text">Măng Đen được biết đến như một thiên đường thuộc huyện Kon Plong, tỉnh Kon Tum. Măng đen có độ cao hơn 1.200m so với mực nước biển. Vùng này có khí hậu ôn đới nên quanh năm mát mẻ, nhiệt độ không cao chỉ giao động trung bình
+                                từ 16-22 độ C, nên cũng có thể nói là se se lạnh.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+
+
+
+
+                        </div>
+                        <div class="nut">
+                            <a href="#" class="btn btn-primary d-inline-flex">Go somewhere</a> <br>
+                            <label for="">
+                                <i class="fas fa-calendar-alt"> 10/12/2023</i>
+                            </label>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-3 ml-3 mt-5" style="width: 100%;">
+                <div class="row col-lg-10">
+                    <div class="col-md-4">
+                        <img src="../img/CuiDinh.png" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8 ">
+                        <div class="card-body ">
+                            <h5 class="card-title">Mũi Dinh – Ninh Thuận </h5>
+                            <p class="card-text">Mũi Dinh Ninh Thuận là một mũi đất và cũng là tên của một ngọn hải đăng. Nơi đây thuộc xã Phước Dinh, Thuận Nam, Ninh Thuận. Mũi Dinh cách thành phố Phan Rang khoảng 40km. Do nằm ở vị trí khá hẻo lánh, đường đi còn nhiều khó
+                                khăn nên không quá nổi tiếng, chỉ mới được biết đến khoảng vài năm gần đây.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+
+
+
+
+                        </div>
+                        <div class="nut">
+                            <a href="#" class="btn btn-primary d-inline-flex">Go somewhere</a> <br>
+                            <label for="">
+                                <i class="fas fa-calendar-alt"> 10/12/2023</i>
+                            </label>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-3 ml-3 mt-5" style="width: 100%;">
+                <div class="row col-lg-10">
+                    <div class="col-md-4">
+                        <img src="../img/TPNganHoa.jpg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8 ">
+                        <div class="card-body ">
+                            <h5 class="card-title">Làng chài Vạn Giã – Khánh Hòa</h5>
+                            <p class="card-text">Vạn Giã nguyên thủy nghĩa là làng của những người làm nghề chài lưới, nằm ở huyện Vạn Ninh, tỉnh Khánh Hòa. Từ QL1A đi qua đèo Cổ Mã và đèo Cả, từ xa có thể trong thấy vùng biển xanh như ngọc của Khánh Hòa. Làng chài Vạn Giã
+                                nép mình bên biển, nhỏ bé và không ồn ào nhưng thực như muốn níu chân du khách ghé lại đây. Đây là một điểm đến ít người biết ở Việt Nam nhưng lai vô cùng cuốn hút.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                        <div class="nut">
+                            <a href="#" class="btn btn-primary d-inline-flex">Go somewhere</a> <br>
+                            <label for="">
+                                <i class="fas fa-calendar-alt"> 10/12/2023</i>
+                            </label>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+    </div>
+    <!-- Newsletter Start -->
+    <div class="container newsletter mt-5 wow fadeIn " data-wow-delay="0.1s ">
+        <div class="row justify-content-center ">
+            <div class="col-lg-10 border rounded p-1" style="border-color: #fea116 !important;">
+                <div class="border rounded text-center p-1 " style="border-color: #fea116 !important;">
+                    <div class="bg-white rounded text-center p-5 ">
+                        <h4 class="mb-4 ">THEO DÕI<span class="text-primary text-uppercase "> Bản Tin</span> CHÚNG TÔI</h4>
+                        <div class="position-relative mx-auto " style="max-width: 400px; ">
+                            <input class="form-control w-100 py-3 ps-4 pe-5 inputContact" type="text " placeholder="Nhập email của bạn ">
+                            <button type="button " class="btn btn-primary py-2 px-3 position-absolute top-0 end-0 mt-2 me-2 ">Gửi</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Newsletter Start -->
+
+    <!-- footer -->
+    <div class="container-fluid bg-dark text-light footer wow fadeIn" data-wow-delay="0.1s">
+        <div class="container pb-5">
+            <div class="row g-5">
+                <div class="col-md-6 col-lg-4">
+                    <div class="rounded p-4 " style="background: orange; ">
+                        <a href="index.html " style="text-decoration: none; ">
+                            <h1 class="text-white text-uppercase mb-3 ">FPOLY TRAVEL</h1>
+                        </a>
+                        <p class="text-white mb-0 ">
+                            FPOLY TRAVEL, Chào mừng đến với dự án website của chúng em - một nơi tuyệt vời để khám phá những địa điểm du lịch nổi tiếng nhất của Việt Nam. Với thông tin đầy đủ và chính xác, nhóm em mong muốn giúp người Việt Nam kể cả bạn bè nước ngoài có thể tìm
+                            hiểu và lên kế hoạch cho chuyến đi du lịch của mình một cách dễ dàng.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <h6 class="section-title text-start text-primary text-uppercase mb-4">Liên Hệ</h6>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Nguyễn Văn Linh, Cần Thơ</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+84 083 856 5542</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>abc@gmail.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-12">
+                    <div class="row gy-5 g-4">
+                        <div class="col-md-6">
+                            <h6 class="section-title text-start text-primary text-uppercase mb-4">Thành Viên</h6>
+                            <a class="btn btn-link" href="">Phùng Quốc Vinh</a>
+                            <a class="btn btn-link" href="">Nguyễn Văn Viễn</a>
+                            <a class="btn btn-link" href="">Trần Thị Ngọc Hân</a>
+                            <a class="btn btn-link" href="">Võ Khánh Duy</a>
+                            <a class="btn btn-link" href="">Tô Quốc Tùng</a>
+                        </div>
+                        <div class="col-md-6">
+                            <h6 class="section-title text-start text-primary text-uppercase mb-4">Chuyên Ngành</h6>
+                            <a class="btn btn-link" href="">Phát Triển Phần Mềm</a>
+                            <a class="btn btn-link" href="">Phát Triển Phần Mềm</a>
+                            <a class="btn btn-link" href="">Du Lịch - Nhà Hàng</a>
+                            <a class="btn btn-link" href="">Du Lịch - Nhà Hàng</a>
+                            <a class="btn btn-link" href="">Phát Triển Phần Mềm</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; Trường Cao Đẳng FPT Polytechnic Cơ Sở Cần Thơ 2023
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+
+
+    </div>
+    <!-- banner -->
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <script src="../lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="../lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+</body>
+
+</html>
